@@ -1,0 +1,11 @@
+APPLICATION_ID: start.servicecomb.io
+service_description:
+  name: gateway
+  version: 0.0.1
+servicecomb:
+  tracing:
+    collector:
+      address: http://127.0.0.1:9411
+  service:
+    registry:
+      address: http://127.0.0.1:30100

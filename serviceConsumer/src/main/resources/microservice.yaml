@@ -1,0 +1,27 @@
+APPLICATION_ID: start.servicecomb.io
+service_description:
+  name: consumer_service
+  version: 0.0.1
+servicecomb:
+  circuitBreaker:
+    Provider:
+      provider_service:
+        requestVolumeThreshold: 1
+  fallbackpolicy:
+    provider:
+      policy: returnnull
+  flowcontrol:
+    Provider:
+      qps:
+        limit:
+          gateway: 1
+  handler:
+    chain:
+      Provider:
+        default: qps-flowcontrol-provider,bizkeeper-provider,tracing-provider
+  rest:
+    address: 0.0.0.0:9003
+  service:
+    registry:
+      address: http://127.0.0.1:30100
+      autodiscovery: false

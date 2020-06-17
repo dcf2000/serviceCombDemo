@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="gateWay" />
+        <module name="serviceConsumer" />
+        <module name="serviceInterface" />
+        <module name="serviceProvider" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="service-interface" target="1.8" />
+      <module name="service-provider" target="1.8" />
+      <module name="serviceCombDemo" target="1.8" />
+      <module name="serviceinterface" target="1.8" />
+      <module name="serviceprovider" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

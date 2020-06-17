@@ -1,0 +1,13 @@
+server:
+  port: 9100
+zuul:
+  routes:
+    consumer_service:
+      serviceId: consumer_service
+discoveryServer:
+  ribbon:
+    eureka:
+      enabled: false
+servicecomb:
+  tracing:
+    enabled: true
